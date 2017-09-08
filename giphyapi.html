@@ -1,9 +1,8 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Animal Gifs</title>
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         
     </head>
@@ -76,8 +75,8 @@
         });
         }
         function displayGifs(){
-        var action = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + action + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var animals = $(this).attr("data-name");
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animals + "&api_key=565bcad5c64a4a52aaf93e20d129fc05";
         console.log(queryURL);
         $.ajax({
         url: queryURL,
